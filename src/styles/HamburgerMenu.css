@@ -178,5 +178,6 @@ button:focus {
     }
     .nav-links button{
         font-size: 0px;
+        padding: 0px;
     }
 }
