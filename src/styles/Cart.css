@@ -1,0 +1,135 @@
+/* Food Order App Cart Page */
+.cart-container {
+    max-width: 750px;
+    margin: auto;
+    padding: 25px;
+    background: #fff8f2;
+    color: #3a3a3a;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(255, 128, 0, 0.12);
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease-in-out;
+    border-top: 5px solid #ff6b35;
+    margin-top: 100px;
+  }
+  
+  .cart-container h2 {
+    text-align: center;
+    margin-bottom: 18px;
+    font-size: 26px;
+    font-weight: 600;
+    color: #ff6b35;
+  }
+  
+  .cart-container .cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 250, 245, 0.8);
+    padding: 14px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 170, 120, 0.3);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .cart-container .cart-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(255, 107, 53, 0.1);
+  }
+  
+  .cart-container .customer-name-input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: 1px solid #ffaa78;
+    background: #fffaf5;
+    color: #3a3a3a;
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .cart-container .customer-name-input:focus {
+    outline: none;
+    border-color: #ff6b35;
+    box-shadow: 0 0 8px rgba(255, 107, 53, 0.2);
+  }
+  
+  /* Buttons */
+  .cart-buttons {
+    display: flex;
+    
+    justify-content: space-between;
+    margin-top: 22px;
+  }
+  
+  .place-order-btn, .clear-cart-btn, .qr-btn {
+    padding: 12px 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .place-order-btn {
+    background: linear-gradient(135deg, #ff6b35, #ff9f1c);
+  }
+  
+  .place-order-btn:hover {
+    background: linear-gradient(135deg, #ff9f1c, #ff6b35);
+    transform: translateY(-2px);
+  }
+  
+  .clear-cart-btn {
+    background: linear-gradient(135deg, #e74c3c, #ff6b6b);
+  }
+  
+  .clear-cart-btn:hover {
+    background: linear-gradient(135deg, #ff6b6b, #e74c3c);
+    transform: translateY(-2px);
+  }
+  
+  .qr-btn {
+    background: linear-gradient(135deg, #43aa8b, #4d908e);
+  }
+  
+  .qr-btn:hover {
+    background: linear-gradient(135deg, #4d908e, #43aa8b);
+    transform: translateY(-2px);
+  }
+  
+  /* QR Image */
+  .qr-image {
+    width: 180px;
+    height: 180px;
+    display: block;
+    margin: 20px auto 0;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(255, 107, 53, 0.15);
+    padding: 8px;
+    background: white;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .qr-image:hover {
+    transform: scale(1.05);
+  }
+  @media (max-width: 768px) {
+    .cart-buttons{
+        flex-direction: column;
+        margin: 10px;
+    }
+    .cart-buttons button{
+        margin: 10px;
+        width: 50%;
+    }
+  }

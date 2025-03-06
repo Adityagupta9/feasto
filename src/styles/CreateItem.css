@@ -1,0 +1,113 @@
+/* Container */
+.create-item-container {
+    max-width: 420px;
+    margin: 60px auto;
+    padding: 30px;
+    background: #fff8f2;
+    border: 1px solid rgba(255, 170, 120, 0.3);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(255, 128, 0, 0.12);
+    font-family: "Poppins", sans-serif;
+    border-top: 5px solid #ff6b35;
+}
+
+/* Heading */
+h2 {
+    margin-bottom: 24px;
+    color: #ff6b35;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h2:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #ff9f1c, #ff6b35);
+    border-radius: 3px;
+}
+
+/* Form */
+.create-item-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 5px;
+}
+
+/* Labels */
+.create-item-form label {
+    font-weight: 500;
+    font-size: 15px;
+    color: #3a3a3a;
+    margin-bottom: 4px;
+}
+
+/* Input Fields */
+.create-item-form input,
+.create-item-form select,
+.create-item-form textarea {
+    width: 95%;
+    padding: 12px;
+    font-size: 15px;
+    border: 1px solid rgba(255, 170, 120, 0.4);
+    border-radius: 8px;
+    background: #fffaf5;
+    transition: all 0.3s ease;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Input Focus Effect */
+.create-item-form input:focus,
+.create-item-form select:focus,
+.create-item-form textarea:focus {
+    border-color: #ff6b35;
+    box-shadow: 0 0 8px rgba(255, 107, 53, 0.2);
+    outline: none;
+}
+
+/* Textarea */
+.create-item-form textarea {
+    height: 90px;
+    resize: none;
+}
+
+/* Button */
+.create-item-form button {
+    background: linear-gradient(135deg, #ff6b35, #ff9f1c);
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(255, 107, 53, 0.2);
+    margin-top: 8px;
+}
+
+/* Button Hover */
+.create-item-form button:hover {
+    background: linear-gradient(135deg, #ff9f1c, #ff6b35);
+    transform: translateY(-2px);
+}
+
+/* Message */
+.message {
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #e74c3c;
+    text-align: center;
+    padding: 8px;
+    border-radius: 6px;
+    background-color: rgba(231, 76, 60, 0.1);
+}

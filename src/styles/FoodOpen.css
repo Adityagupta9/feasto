@@ -1,0 +1,210 @@
+.food-details-container {
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    padding: 40px;
+    background-color: #fff8f2; /* Matching app background */
+  }
+  
+  .food-details {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(255, 128, 0, 0.12);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    margin-top: 20px;
+    border-top: 5px solid #ff6b35;
+  }
+  
+  .food-details:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Left Side: Enlarged Food Image */
+  .food-image-container {
+    flex: 1.2;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #fffaf5, #fff0e6); /* Warm gradient background */
+  }
+  
+  .food-detail-image {
+    width: 100%;
+    max-width: 400px; /* Increased image size */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(255, 107, 53, 0.15);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .food-detail-image:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Right Side: Enlarged Food Details */
+  .food-info {
+    flex: 1.8;
+    padding: 40px;
+  }
+  
+  .food-info h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff6b35;
+    margin-bottom: 10px;
+  }
+  
+  .food-tag {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #3a3a3a;
+    margin-bottom: 15px;
+  }
+  
+  .food-tag span {
+    background: rgba(255, 159, 28, 0.15);
+    padding: 4px 10px;
+    border-radius: 6px;
+    color: #ff6b35;
+    font-weight: bold;
+  }
+  
+  .food-full-description {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .food-price {
+    font-size: 1.3rem;
+    color: #ff9f1c;
+    font-weight: 600;
+    margin: 20px 0;
+  }
+  
+  #quantity {
+    width: 60px;
+    padding: 8px;
+    font-size: 1.1rem;
+    text-align: center;
+    border: 2px solid rgba(255, 170, 120, 0.4);
+    border-radius: 8px;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  #quantity:focus {
+    outline: none;
+    border-color: #ff6b35;
+    box-shadow: 0 0 8px rgba(255, 107, 53, 0.2);
+  }
+  
+  .add-to-cart-btn {
+    background: linear-gradient(135deg, #ff6b35, #ff9f1c);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 12px 20px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(255, 107, 53, 0.2);
+  }
+  
+  .add-to-cart-btn:hover {
+    background: linear-gradient(135deg, #ff9f1c, #ff6b35);
+    transform: translateY(-2px);
+  }
+  
+  .cart-icon {
+    font-size: 1.5rem;
+  }
+  
+  .delete-food-btn {
+    right: 30px;
+    background: linear-gradient(135deg, #e74c3c, #ff6b6b);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(231, 76, 60, 0.2);
+  }
+  
+  .delete-food-btn:hover {
+    background: linear-gradient(135deg, #ff6b6b, #e74c3c);
+    
+  }
+  
+  .delete-icon {
+    font-size: 1.2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .food-details-container {
+      padding: 20px;
+    }
+    
+    .food-details {
+      flex-direction: column; /* Stack Image and Details */
+      text-align: center;
+    }
+  
+    .food-image-container {
+      padding: 20px;
+    }
+  
+    .food-detail-image {
+      max-width: 100%;
+      width: 90%; /* Adjust image size */
+    }
+  
+    .food-info {
+      padding: 20px;
+    }
+  
+    .food-info h2 {
+      font-size: 1.8rem;
+    }
+  
+    .food-full-description {
+      font-size: 1rem;
+      text-align: left;
+    }
+  
+    .food-price {
+      font-size: 1.4rem;
+    }
+  
+    .add-to-cart-btn {
+      justify-content: center;
+      width: 100%;
+    }
+    
+    .delete-food-btn {
+      position: relative;
+      top: 0;
+      right: 0;
+      margin: 10px auto;
+      width: 100%;
+      justify-content: center;
+    }
+  }

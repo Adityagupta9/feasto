@@ -1,0 +1,102 @@
+/* Center the login container */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f8f9fa; /* Light gray background */
+  font-family: "Poppins", sans-serif;
+}
+
+/* Login Box */
+.login-box {
+  width: 350px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.login-box:hover {
+  transform: scale(1.02);
+}
+
+/* Login Title */
+.login-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #ff4d4d; /* Zomato Red */
+  margin-bottom: 15px;
+}
+
+/* Input Fields */
+.login-input {
+  width: 95%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+  background: #f8f9fa;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+}
+
+.login-input::placeholder {
+  color: #888;
+}
+
+.login-input:focus {
+  border-color: #ff4d4d;
+  background: white;
+}
+
+/* Error Message */
+.error-message {
+  color: #ff4d4d;
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+/* Login Button */
+.login-button {
+  width: 100%;
+  background-color: #ff4d4d;
+  color: white;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.login-button:hover {
+  background-color: #e63939;
+  box-shadow: 0px 4px 10px rgba(255, 77, 77, 0.3);
+}
+
+/* ReCAPTCHA */
+.recaptcha-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.login-recaptcha iframe {
+  transform: scale(0.8); /* Adjust scale to make it smaller */
+  transform-origin: center;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .login-box {
+    width: 80%;
+  }
+}
