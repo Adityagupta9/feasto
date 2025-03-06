@@ -67,7 +67,7 @@ const HamburgerMenu = () => {
 
           {isOpen && (
             <div className="menu-dropdown">
-              <Link to="/food-dashboard" onClick={() => setIsOpen(false)}>Food Items</Link>
+              <Link to="/" onClick={() => setIsOpen(false)}>Food Items</Link>
               <Link to="/create-item" onClick={() => setIsOpen(false)}>Create Item</Link>
               <Link to="/cart">Cart <span className="react-icons"><FaOpencart/></span></Link>
               <button onClick={handleLogout}>Logout</button>
