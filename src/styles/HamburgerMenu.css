@@ -183,6 +183,10 @@ button:focus {
     .nav-content h1{
         font-size: 0px;
     }
+    .nav-content{
+        padding-right: 40px;
+        padding-left: 10px;
+    }
     .nav-links button{
         font-size: 0px;
         padding: 0px;
@@ -190,6 +194,8 @@ button:focus {
     .nav-logo {
         width: 40px; /* Adjust size as needed */
         height: auto;
+        margin: -10px;
+        
         margin-right: auto; /* Pushes other elements to the right */
     }
 }
