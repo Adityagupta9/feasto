@@ -93,10 +93,15 @@ const FoodDashboard = () => {
       <header className="dashboard-header">
         <HamburgerMenu />
       </header>
-      <h2 className="dashboard-title">Food Dashboard</h2> 
+       
       <div className="food-grid"> 
         {foodItems.map((food) => ( 
-          <div key={food._id} className="food-card"> 
+          <div 
+            key={food._id} 
+            className="food-card"
+            onClick={() => navigate(`/food/${food._id}`)}
+            style={{ cursor: "pointer" }}
+          > 
             {foodImages[food._id] ? (
               <img  
                 src={foodImages[food._id]}  
@@ -110,12 +115,6 @@ const FoodDashboard = () => {
             <p className="food-description">{food.description.slice(0, 50)}...</p> 
             <div className="food-class-last">
                 <p className="food-price">₹{food.price}</p> 
-                <button 
-                  className="see-more-btn"
-                  onClick={() => navigate(`/food/${food._id}`)}
-                >
-                  See More
-                </button>
             </div> 
           </div> 
         ))} 

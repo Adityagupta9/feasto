@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FiLogOut } from "react-icons/fi";
 import { FaOpencart } from "react-icons/fa";
+import feastoLogo from "../image/feastoLogo.png"; 
 import "../styles/HamburgerMenu.css";
 
 const HamburgerMenu = () => {
@@ -39,7 +40,7 @@ const HamburgerMenu = () => {
       {/* Full-width navbar */}
       <nav className={`navbar ${showNavbar ? "visible" : "hidden"}`}>
         <div className="nav-content">
-          <h1>Feasto</h1>
+        <img src={feastoLogo} alt="Feasto Logo" className="nav-logo" /> 
           <div className="nav-links">
             <Link to="/">Food Items</Link>
             <Link to="/create-item">Create Item</Link>

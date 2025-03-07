@@ -39,6 +39,7 @@
 
 /* Food Grid */
 .food-grid {
+    margin-top:70px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 140px;
@@ -47,7 +48,7 @@
 
 /* Food Card */
 .food-card {
-    width: 280px;
+    width: 300px;
     background: #ffffff;
     border-radius: 12px;
     padding: 12px;

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import ReCAPTCHA from "react-google-recaptcha";
+import feastoLogo from "../image/feastoLogo.png"; // Import logo
 import "../styles/Login.css"; // Import external CSS
 
 const baseURL = "https://food-appi-b.vercel.app/api"; // Replace with actual backend URL
@@ -36,6 +37,7 @@ const Login = () => {
   return (
     <div className="login-container">
       <div className="login-box">
+        <img src={feastoLogo} alt="Feasto Logo" className="login-logo" /> 
         <h2 className="login-title">Login</h2>
         {error && <p className="error-message">{error}</p>}
         <form onSubmit={handleLogin}>
@@ -57,11 +59,10 @@ const Login = () => {
           />
           <div className="login-recaptcha">
             <ReCAPTCHA
-                sitekey="6LdFTNAqAAAAAD10fnUv69HXEme3RAn0aU7RzlwZ"
-                onChange={setCaptchaValue}
-               
+              sitekey="6LdFTNAqAAAAAD10fnUv69HXEme3RAn0aU7RzlwZ"
+              onChange={setCaptchaValue}
             />
-            </div>
+          </div>
 
           <button type="submit" className="login-button">Login</button>
         </form>

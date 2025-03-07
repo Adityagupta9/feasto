@@ -5,8 +5,15 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #f8f9fa; /* Light gray background */
+  background-color: #ffede3b6; /* Light gray background */
   font-family: "Poppins", sans-serif;
+  
+}
+.login-logo {
+  display: block;
+  margin: 0 auto;
+  width: 120px; /* Adjust size as needed */
+  height: auto;
 }
 
 /* Login Box */
@@ -26,6 +33,7 @@
 
 /* Login Title */
 .login-title {
+  text-align: left;
   font-size: 26px;
   font-weight: 700;
   color: #ff4d4d; /* Zomato Red */
@@ -44,7 +52,27 @@
   transition: all 0.3s ease-in-out;
   outline: none;
 }
+.login-box h2 {
+  margin-bottom: 24px;
+  color: #ff6b35;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: left;
+  position: relative;
+  padding-bottom: 10px;
+}
 
+.login-box h2:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 33px;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #ff9f1c, #ff6b35);
+  border-radius: 3px;
+}
 .login-input::placeholder {
   color: #888;
 }
